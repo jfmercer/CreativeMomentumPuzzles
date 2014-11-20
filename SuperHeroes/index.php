@@ -29,6 +29,7 @@
             <li><a href="img/wonderwoman.jpg"><img src="img/wonderwoman.jpg" width="100" alt="wonderwoman"></a></li>
         </ul>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="app.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+        <!-- <script type="text/javascript" src="js/superheroes.json"></script> -->
     </body>
 </html>
