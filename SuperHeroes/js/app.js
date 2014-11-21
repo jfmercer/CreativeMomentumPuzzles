@@ -1,3 +1,12 @@
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+
+//An image to overlay
+$overlay.append($image);
+
+//Add overlay
+$("body").append($overlay);
+
 // load JSON inner array into global var
 heroes = (function () {
     var json = null;
@@ -12,8 +21,6 @@ heroes = (function () {
     });
     return json['superheroes'];
 })();
-console.log(heroes);
-console.log(heroes[0].superhero);
 
 heroes.sort(sortFunction);
 
@@ -29,6 +36,24 @@ function sortFunction(a, b) {
 for (var i = 0; i < heroes.length; i++) {
     $("#imageGallery").append('<li><a href=\"' + heroes[i].artURL + '\"><img src=\"' + heroes[i].artURL + '\" width=\"100\" alt=\"' + heroes[i].superhero + '\"></a></li>');
 }
-console.log(heroes);
-// var x = '<li><a href=\"' + heroes[0].artURL + '\"><img src=\"' + heroes[0].artURL + '\" width=\"100\" alt=\"' + heroes[0].superhero + '\"></a></li>';
-// console.log(x);
+
+//Capture the click event on a link to an image
+$("#imageGallery a").click(function(event){
+  event.preventDefault();
+  var imageLocation = $(this).attr("href");
+  //Update overlay with the image linked in the link
+  $image.attr("src", imageLocation);
+
+  //Show the overlay.
+  $overlay.show();
+
+  //Get child's alt attribute and set caption
+  // var captionText = $(this).children("img").attr("alt");
+  // $caption.text(captionText);
+});
+
+//When overlay is clicked
+$overlay.click(function(){
+  //Hide the overlay
+  $overlay.hide();
+});
