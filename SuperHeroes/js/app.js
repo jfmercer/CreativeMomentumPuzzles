@@ -25,4 +25,10 @@ function sortFunction(a, b) {
         return (a['superhero'] < b['superhero']) ? -1 : 1;
     }
 }
+
+for (var i = 0; i < heroes.length; i++) {
+    $("#imageGallery").append('<li><a href=\"' + heroes[i].artURL + '\"><img src=\"' + heroes[i].artURL + '\" width=\"100\" alt=\"' + heroes[i].superhero + '\"></a></li>');
+}
 console.log(heroes);
+// var x = '<li><a href=\"' + heroes[0].artURL + '\"><img src=\"' + heroes[0].artURL + '\" width=\"100\" alt=\"' + heroes[0].superhero + '\"></a></li>';
+// console.log(x);
