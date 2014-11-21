@@ -1,11 +1,28 @@
-// make deep copy of superheroes.json into var heroes
-var heroes = $.getJSON('js/superheroes.json', function (json) {
-    for (var i = 0; i < json["superheroes"].length; i++) {
-        // console.log(json["superheroes"][i]);
-        heroes[i] = json["superheroes"][i];
+// load JSON inner array into global var
+heroes = (function () {
+    var json = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': 'js/superheroes.json',
+        'dataType': "json",
+        'success': function (results) {
+            json = results;
+        }
+    });
+    return json['superheroes'];
+})();
+console.log(heroes);
+console.log(heroes[0].superhero);
+
+heroes.sort(sortFunction);
+
+function sortFunction(a, b) {
+    if (a['superhero'] === b['superhero']) {
+        return 0;
     }
-
-    return heroes;
-});
-
+    else {
+        return (a['superhero'] < b['superhero']) ? -1 : 1;
+    }
+}
 console.log(heroes);
