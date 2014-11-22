@@ -1,0 +1,6 @@
+Nota Bene: Portions of the code for this project were taken from a course I
+took on teamtreehouse.com. The instructor and author of the course is
+Andrew Chalkley, who can be reached at andrew@chalkley.org, on Twitter at
+@chalkers, or on GitHub at http://github.com/chalkers.
+The course was "jQuery Basics" and may be found at
+http://teamtreehouse.com/library/jquery-basics.
