@@ -27,7 +27,7 @@ class Primes {
     public function printPrimeRemainders(array $primeArray) {
         $primeRemainders = array();
         foreach($primeArray as $value) {
-            $remainder = $value / 3;
+            $remainder = round($value / 3, 3);
 
             $primeRemainders[$value] = $remainder;
         }
