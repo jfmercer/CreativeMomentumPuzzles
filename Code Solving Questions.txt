@@ -1,33 +1,34 @@
 Code Solving Questions
 
-Upload your work to a public Github profile, and send it to us.
+Upload your work to a public Github profile.
 
+1) Using any programming language (PHP preferred), implement an algorithm that solves the following 
+   for a number sequence from 0-1000:
 
+   a) Return a List or Array of every prime number, and print it to the screen.
 
-●      Using any programming language (PHP preferred), implement an algorithm that solves the following for a number sequence from 0-1000:
+   b) Every number in the sequence, that when divided by 3 produces a remainder (Store the original 
+      number AND its remainder in a List or Associative Array, and print it to the screen AFTER 
+      printing the prime numbers list)
 
-○     Return a List or Array of every prime number, and print it to the screen.
+2) Using any programming language (PHP preferred), implement an algorithm that will reverse 
+   the following strings, WITHOUT using native string reversal calls in the language’s API. 
+   (String splitting calls are permitted)
 
-○     Every number in the sequence, that when divided by 3 produces a remainder (Store the original number AND its remainder in a List or Associative Array, and print it to the screen AFTER printing the prime numbers list)
+    a) racecar
 
-●      Using any programming language (PHP preferred), implement an algorithm that will reverse the following strings, WITHOUT using native string reversal calls in the language’s API. (String splitting calls are permitted)
+    b) azerty
 
-○      racecar
+    c) turgid saxophones blew over mick’s jazzy quaff
 
-○      azerty
+    d) maximum velocity minimum energy
 
-○      turgid saxophones blew over mick’s jazzy quaff
+    e) a man a plan a canal panama
 
-○      maximum velocity minimum energy
+3) Using HTML, JavaScript and jQuery, load this JSON 
+   [https://github.com/Enviii/Superheroes/blob/master/js/superheroes.json] and only show all 
+   DC Comics superheroes, in alphabetical order by First Name. Feel free to load any additional 
+   images or features to enhance the layout. Feel free to use any call in the jQuery API 
+   to complete your implementation.
 
-○      a man a plan a canal panama
-
-●     Using HTML, JavaScript and jQuery, load this JSON [1] and only show all DC Comics superheroes, in alphabetical order by First Name. Feel free to load any additional images or features to enhance the layout. Feel free to use any call in the jQuery API to complete your implementation.
-
-○      Please use semantic HTML5 markup when rendering your output. No tables allowed.
-
-Let me know if you have any questions!
-
-Thanks,
-
-Michael
+   Note: Please use semantic HTML5 markup when rendering your output. No tables allowed.
